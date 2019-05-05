@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8772B497227F55FE00CEED6D /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8772B496227F55FE00CEED6D /* PhotoCell.swift */; };
+		8772B49F227F6A3F00CEED6D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8772B49E227F6A3F00CEED6D /* DetailViewController.swift */; };
 		87F1A0F822481E1C00242B54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F1A0F722481E1C00242B54 /* AppDelegate.swift */; };
 		87F1A0FA22481E1C00242B54 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F1A0F922481E1C00242B54 /* MapViewController.swift */; };
 		87F1A0FD22481E1C00242B54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F1A0FB22481E1C00242B54 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		8772B496227F55FE00CEED6D /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		8772B49E227F6A3F00CEED6D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		87F1A0F422481E1C00242B54 /* VirtualTourist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualTourist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F1A0F722481E1C00242B54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87F1A0F922481E1C00242B54 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				87F1A0F922481E1C00242B54 /* MapViewController.swift */,
+				8772B49E227F6A3F00CEED6D /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -98,11 +101,11 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		8772B49B227F652300CEED6D /* Net */ = {
+		8772B49B227F652300CEED6D /* Remote */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Net;
+			path = Remote;
 			sourceTree = "<group>";
 		};
 		8772B49C227F654C00CEED6D /* Extension */ = {
@@ -144,7 +147,7 @@
 			children = (
 				8772B49D227F656300CEED6D /* Resource */,
 				8772B49C227F654C00CEED6D /* Extension */,
-				8772B49B227F652300CEED6D /* Net */,
+				8772B49B227F652300CEED6D /* Remote */,
 				8772B49A227F650F00CEED6D /* Storyboard */,
 				8772B498227F64D000CEED6D /* Controller */,
 				8772B495227F55E200CEED6D /* Model */,
@@ -289,6 +292,7 @@
 			files = (
 				8772B497227F55FE00CEED6D /* PhotoCell.swift in Sources */,
 				87F1A0FA22481E1C00242B54 /* MapViewController.swift in Sources */,
+				8772B49F227F6A3F00CEED6D /* DetailViewController.swift in Sources */,
 				87F1A0F822481E1C00242B54 /* AppDelegate.swift in Sources */,
 				87F1A10022481E1C00242B54 /* VirtualTourist.xcdatamodeld in Sources */,
 			);
@@ -465,12 +469,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8K8L59XB48;
-				INFOPLIST_FILE = VirtualTourist/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/VirtualTourist/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = josenaves.com.VirtualTourist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josenaves.VirtualTourist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -483,12 +487,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8K8L59XB48;
-				INFOPLIST_FILE = VirtualTourist/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/VirtualTourist/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = josenaves.com.VirtualTourist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josenaves.VirtualTourist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
