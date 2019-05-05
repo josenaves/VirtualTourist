@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8772B497227F55FE00CEED6D /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8772B496227F55FE00CEED6D /* PhotoCell.swift */; };
 		87F1A0F822481E1C00242B54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F1A0F722481E1C00242B54 /* AppDelegate.swift */; };
 		87F1A0FA22481E1C00242B54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F1A0F922481E1C00242B54 /* ViewController.swift */; };
 		87F1A0FD22481E1C00242B54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F1A0FB22481E1C00242B54 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8772B496227F55FE00CEED6D /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		87F1A0F422481E1C00242B54 /* VirtualTourist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualTourist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F1A0F722481E1C00242B54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87F1A0F922481E1C00242B54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8772B495227F55E200CEED6D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				87F1A0FE22481E1C00242B54 /* VirtualTourist.xcdatamodeld */,
+				8772B496227F55FE00CEED6D /* PhotoCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		87F1A0EB22481E1C00242B54 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +110,13 @@
 		87F1A0F622481E1C00242B54 /* VirtualTourist */ = {
 			isa = PBXGroup;
 			children = (
+				8772B495227F55E200CEED6D /* Model */,
 				87F1A0F722481E1C00242B54 /* AppDelegate.swift */,
 				87F1A0F922481E1C00242B54 /* ViewController.swift */,
 				87F1A0FB22481E1C00242B54 /* Main.storyboard */,
 				87F1A10122481E1D00242B54 /* Assets.xcassets */,
 				87F1A10322481E1D00242B54 /* LaunchScreen.storyboard */,
 				87F1A10622481E1D00242B54 /* Info.plist */,
-				87F1A0FE22481E1C00242B54 /* VirtualTourist.xcdatamodeld */,
 			);
 			path = VirtualTourist;
 			sourceTree = "<group>";
@@ -196,13 +207,16 @@
 				TargetAttributes = {
 					87F1A0F322481E1C00242B54 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					87F1A10A22481E1D00242B54 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 87F1A0F322481E1C00242B54;
 					};
 					87F1A11522481E1D00242B54 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 87F1A0F322481E1C00242B54;
 					};
 				};
@@ -259,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8772B497227F55FE00CEED6D /* PhotoCell.swift in Sources */,
 				87F1A0FA22481E1C00242B54 /* ViewController.swift in Sources */,
 				87F1A0F822481E1C00242B54 /* AppDelegate.swift in Sources */,
 				87F1A10022481E1C00242B54 /* VirtualTourist.xcdatamodeld in Sources */,
@@ -445,7 +460,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = josenaves.com.VirtualTourist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -463,7 +478,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = josenaves.com.VirtualTourist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -483,7 +498,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = josenaves.com.VirtualTouristTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VirtualTourist.app/VirtualTourist";
 			};
@@ -504,7 +519,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = josenaves.com.VirtualTouristTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VirtualTourist.app/VirtualTourist";
 			};
@@ -524,7 +539,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = josenaves.com.VirtualTouristUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = VirtualTourist;
 			};
@@ -544,7 +559,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = josenaves.com.VirtualTouristUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = VirtualTourist;
 			};
