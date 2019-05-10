@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8754A313228108E80018A43D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8754A312228108E80018A43D /* Constants.swift */; };
+		8754A3152281099B0018A43D /* ApiRemoteClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8754A3142281099B0018A43D /* ApiRemoteClient.swift */; };
 		8772B497227F55FE00CEED6D /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8772B496227F55FE00CEED6D /* PhotoCell.swift */; };
 		8772B49F227F6A3F00CEED6D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8772B49E227F6A3F00CEED6D /* DetailViewController.swift */; };
+		8772B4A1227F813600CEED6D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8772B4A0227F813600CEED6D /* DataController.swift */; };
+		8772B4A3227F819A00CEED6D /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8772B4A2227F819A00CEED6D /* UIViewController+Extensions.swift */; };
 		87F1A0F822481E1C00242B54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F1A0F722481E1C00242B54 /* AppDelegate.swift */; };
 		87F1A0FA22481E1C00242B54 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F1A0F922481E1C00242B54 /* MapViewController.swift */; };
 		87F1A0FD22481E1C00242B54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F1A0FB22481E1C00242B54 /* Main.storyboard */; };
@@ -35,8 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8754A312228108E80018A43D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8754A3142281099B0018A43D /* ApiRemoteClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRemoteClient.swift; sourceTree = "<group>"; };
 		8772B496227F55FE00CEED6D /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		8772B49E227F6A3F00CEED6D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8772B4A0227F813600CEED6D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		8772B4A2227F819A00CEED6D /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		87F1A0F422481E1C00242B54 /* VirtualTourist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualTourist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F1A0F722481E1C00242B54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87F1A0F922481E1C00242B54 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +96,7 @@
 			children = (
 				87F1A0F922481E1C00242B54 /* MapViewController.swift */,
 				8772B49E227F6A3F00CEED6D /* DetailViewController.swift */,
+				8772B4A0227F813600CEED6D /* DataController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -104,6 +113,8 @@
 		8772B49B227F652300CEED6D /* Remote */ = {
 			isa = PBXGroup;
 			children = (
+				8754A312228108E80018A43D /* Constants.swift */,
+				8754A3142281099B0018A43D /* ApiRemoteClient.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -111,6 +122,7 @@
 		8772B49C227F654C00CEED6D /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8772B4A2227F819A00CEED6D /* UIViewController+Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -229,12 +241,10 @@
 					87F1A10A22481E1D00242B54 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1020;
-						TestTargetID = 87F1A0F322481E1C00242B54;
 					};
 					87F1A11522481E1D00242B54 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1020;
-						TestTargetID = 87F1A0F322481E1C00242B54;
 					};
 				};
 			};
@@ -291,10 +301,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8772B497227F55FE00CEED6D /* PhotoCell.swift in Sources */,
+				8772B4A1227F813600CEED6D /* DataController.swift in Sources */,
 				87F1A0FA22481E1C00242B54 /* MapViewController.swift in Sources */,
+				8772B4A3227F819A00CEED6D /* UIViewController+Extensions.swift in Sources */,
 				8772B49F227F6A3F00CEED6D /* DetailViewController.swift in Sources */,
+				8754A3152281099B0018A43D /* ApiRemoteClient.swift in Sources */,
 				87F1A0F822481E1C00242B54 /* AppDelegate.swift in Sources */,
 				87F1A10022481E1C00242B54 /* VirtualTourist.xcdatamodeld in Sources */,
+				8754A313228108E80018A43D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,7 +517,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8K8L59XB48;
 				INFOPLIST_FILE = VirtualTouristTests/Info.plist;
@@ -514,9 +528,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = josenaves.com.VirtualTouristTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VirtualTourist.app/VirtualTourist";
 			};
 			name = Debug;
 		};
@@ -524,7 +538,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8K8L59XB48;
 				INFOPLIST_FILE = VirtualTouristTests/Info.plist;
@@ -535,9 +549,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = josenaves.com.VirtualTouristTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VirtualTourist.app/VirtualTourist";
 			};
 			name = Release;
 		};
@@ -545,6 +559,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8K8L59XB48;
 				INFOPLIST_FILE = VirtualTouristUITests/Info.plist;
@@ -555,9 +570,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = josenaves.com.VirtualTouristUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = VirtualTourist;
 			};
 			name = Debug;
 		};
@@ -565,6 +581,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8K8L59XB48;
 				INFOPLIST_FILE = VirtualTouristUITests/Info.plist;
@@ -575,9 +592,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = josenaves.com.VirtualTouristUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = VirtualTourist;
 			};
 			name = Release;
 		};
