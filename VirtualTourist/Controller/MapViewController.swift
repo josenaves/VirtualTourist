@@ -47,9 +47,9 @@ class MapViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? DetailViewController {
+        if let viewController = segue.destination as? DetailViewController {
             let pin = sender as! Pin
-            vc.pinTapped = pin
+            viewController.pinTapped = pin
         }
     }
 
